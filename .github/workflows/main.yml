@@ -54,7 +54,7 @@ jobs:
         run: |
           set -e -o pipefail
           ./cruelbuild config                    \
-                       +os_patch_level=2022-12   \
+                       os_patch_level=2022-12   \
                        model=${{ matrix.model }} \
                        name="Battlizer Kernel"   \
                        toolchain=$TOOLCHAIN      \
